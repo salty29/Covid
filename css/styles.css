@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #A569BD;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -18,8 +18,27 @@ header h1 {
     font-size: 40px;
 }
 
+p {
+    font-size: 25px;
+}
+
+quote {
+    font-size: 15px;
+    font-style: italic;
+}
+
+subheading1 {
+    font-size: 40px;
+    font-style: bold;    
+}
+
+ol {
+    font-size: 25px;
+    font-style: italic;    
+}
+
 nav {
-    background-color: #5DADE2;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -33,7 +52,7 @@ nav {
 }
 
 .menu button {
-    background-color: #5DADE2; /* Matching the header color */
+    background-color: #333; /* Matching the header color */
     font-size: 20px;
     color: #fff;
     border: none;
@@ -79,7 +98,7 @@ nav {
 }
 
 footer {
-    background-color: #A569BD;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
