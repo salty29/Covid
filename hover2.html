@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Image</title>
+    <style>
+        .hover-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hover-container:hover::before {
+            content: attr(data-tooltip); /* Display the tooltip text */
+            position: absolute;
+            top: -30px; /* Adjust the positioning as needed */
+            left: 50%; /* Center the tooltip horizontally */
+            transform: translateX(-50%); /* Center the tooltip horizontally */
+            background: url('img/booster_letter.jpg'); /* Replace with your base64 encoded image */
+            background-size: cover;
+            width: 100px; /* Adjust the width of the image */
+            height: 30px; /* Adjust the height of the image */
+            z-index: 1;
+            color: transparent;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        This is a paragraph with a <span class="hover-container" data-tooltip="Custom Image Tooltip"></span> hover effect.
+    </p>
+
+</body>
+</html>
